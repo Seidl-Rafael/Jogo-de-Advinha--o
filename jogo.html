@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="jogo.css">
+    <script src="jogo.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Jogo de Adivinhação</h1>
+        </header>
+
+        <div class="p">
+            <p>Esse é um jogo de adivinhação.</p>
+            <P>Ao clicar em "INICIAR", o sistema irá gerar um número aleatório entre 1 e 100.</P>
+            <p>Seu objetivo será acertar esse número digitando ele na aba "Digite aqui".</P>
+            <p>Clique no botão "CHUTAR" para efetuar um chute.</p>
+            <p>Caso o número que você digitou não seja o número secreto,</p>
+            <p>o sistema indicará se você chutou abaixo ou acima do resultado.</p>
+            <P>Você perderá uma vida ao errar.</P>
+        </div>
+
+        <div class="life">
+            <h3>❤️ Vidas: </h3>
+            <h3 id="life">10</h3>
+        </div>
+
+        <h5 id="result"></h5>
+
+        <div class="labe">
+
+            <section>
+                <label for="chute"></label>
+                <input type="number" id="chute" placeholder="Digite Aqui">
+            </section>
+
+        </div>
+
+        <button onclick="kick()" id="kick">CHUTAR</button>
+        <button onclick="iniciar()" id="iniciate">INICIAR</button>
+
+        <div>
+            <h4 id="kikes">Chutes: </h4>
+            <h4 id="attempt"></h4>
+        </div>
+
+    </div>
+
+</body>
+</html>
