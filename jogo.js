@@ -19,6 +19,11 @@ function kick() {
 
     let number = parseInt(document.getElementById("chute").value);
 
+    if (number > 100 || number < 1) {
+        window.alert("Só serão aceitos números de 1 a 100.")
+        return;
+    }
+
     if (vidas === 0) {
         document.getElementById("result").textContent = "Suas vidas acabaram. O número era " + x;
         game = false;
